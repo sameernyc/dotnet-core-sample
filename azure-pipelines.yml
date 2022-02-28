@@ -3,6 +3,7 @@
 
 pool:
   vmImage: 'Ubuntu 20.04'
+  environment: ubuntu-20
   
 variables:
   buildConfiguration: 'Release'
@@ -19,3 +20,4 @@ steps:
     testResultsFiles: '**/*.trx'
 
 - task: PublishBuildArtifacts@1
+  
